@@ -2,9 +2,407 @@ export const SO = {
   id: "SO",
   name: "SO",
   monogram: "SO",
-  description:
-    "SO",
+  description: "SO",
   questions: [
+    // 1 (Super Difícil) - Projeto TI / Metas SMART
+    {
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        'Ao analisar a aderência SMART da documentação do projeto da estufa inteligente para cultivo de Champignon de Paris, o critério "Mensurável" é atendido de forma objetiva por qual das condições a seguir?[cite: 2]',
+      options: [
+        "Uso de tecnologia Arduino compatível com prazo e orçamento acadêmico.",
+        "Resolução do problema de perda de lotes na maior espécie produzida no país.",
+        "Definição estrita da data de entrega conforme o cronograma do curso.",
+        "Entrega de protótipo funcional com leituras armazenadas por 8 a 12 semanas.",
+      ],
+      correctIndex: 3,
+    },
+
+    // 2 (Fácil) - Linux
+    {
+      type: "mcq",
+      difficulty: "fácil",
+      template:
+        "No terminal Linux da VM de testes, qual comando é utilizado exclusivamente para criar um novo diretório de arquivos?[cite: 1]",
+      options: ["mkdir", "touch", "cd ..", "nano"],
+      correctIndex: 0,
+    },
+
+    // 3 (Difícil) - Definições de SO / Autores
+    {
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Segundo a definição clássica de Tanenbaum (2009) sobre a relação entre o hardware e o Sistema Operacional, pode-se afirmar que:[cite: 1]",
+      options: [
+        "É um programa que gerencia exclusivamente serviços de entrada e saída enquanto houver requisições ativas.",
+        "É um conjunto de bibliotecas utilitárias ativadas somente durante o boot inicial do sistema operacional.",
+        "É uma interface gráfica que atua na alocação pontual de recursos de rede e memória para as aplicações.",
+        "O SO é o único programa em execução o tempo todo no computador (kernel), desde que o hardware esteja ativo.",
+      ],
+      correctIndex: 3,
+    },
+
+    // 4 (Difícil) - PowerShell Operadores
+    {
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Um analista precisa registrar o nome do servidor local em um arquivo de log pré-existente sem apagar os registros anteriores via PowerShell. Qual operador deve ser utilizado?[cite: 1]",
+      options: [
+        "$env:computername > log.txt",
+        "$env:computername | log.txt",
+        "$env:computername >> log.txt",
+        "$env:computername +> log.txt",
+      ],
+      correctIndex: 2,
+    },
+
+    // 5 (Super Difícil) - Teoria de SO / Machado
+    {
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Segundo a abordagem teórica de Machado (2007), a função precípua e a utilidade fundamental do Sistema Operacional na arquitetura computacional consistem em:[cite: 1]",
+      options: [
+        "Atuar na alocação de recursos e serviços como memória, processadores e dispositivos.",
+        "Manter a interface gráfica (GUI) ativa continuamente durante a execução do usuário.",
+        "Executar a compilação do código das aplicações do usuário direto na camada física.",
+        "Configurar os parâmetros da BIOS e do bootloader para evitar falhas do sistema.",
+      ],
+      correctIndex: 0,
+    },
+
+    // 6 (Médio) - Linux Comandos
+    {
+      type: "mcq",
+      difficulty: "médio",
+      template:
+        'No ambiente Linux, um estagiário precisa remover simultaneamente dois arquivos de texto ("atividade.txt" e "aluno.txt") da pasta atual. O comando correto para essa ação é:[cite: 1]',
+      options: [
+        "del atividade.txt aluno.txt",
+        "erase atividade.txt aluno.txt",
+        "unlink atividade.txt aluno.txt",
+        "rm atividade.txt aluno.txt",
+      ],
+      correctIndex: 3,
+    },
+
+    // 7 (Super Difícil) - PowerShell / Processos e Memória
+    {
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Para identificar rapidamente os 5 processos que mais consomem memória de trabalho no Windows utilizando o PowerShell, qual pipeline de comandos deve ser executado?[cite: 1]",
+      options: [
+        "ps | select -first 5 | sort -p ws",
+        "ps | sort -p ws | select -last 5",
+        "ps | sort -p cpu | select -first 5",
+        "ps | where -p ws | select -last 5",
+      ],
+      correctIndex: 1,
+    },
+
+    // 8 (Fácil) - Linux pwd
+    {
+      type: "mcq",
+      difficulty: "fácil",
+      template:
+        "Qual comando do terminal Linux deve ser executado por um usuário para exibir o caminho absoluto do diretório em que ele se encontra atualmente?[cite: 1]",
+      options: ["ls", "dir", "pwd", "cd"],
+      correctIndex: 2,
+    },
+
+    // 9 (Difícil) - PowerShell / Comandos e Parâmetros (Select)
+    {
+      type: "select",
+      difficulty: "difícil",
+      template:
+        "Ao utilizar o PowerShell, para obter ajuda sobre comandos relacionados a serviços do sistema utiliza-se {{0}}, e para excluir uma pasta e todo o seu conteúdo interno utiliza-se {{1}}.[cite: 1]",
+      blanksOptions: [
+        ["Get-Help *-Service", "Get-Service *", "Get-Command -Service"],
+        [
+          "Remove-Item nome_diretorio -Recurse",
+          "Remove-Item nome_diretorio -Force",
+          "Clear-Item nome_diretorio -All",
+        ],
+      ],
+      blanksCorrect: [
+        "Get-Help *-Service",
+        "Remove-Item nome_diretorio -Recurse",
+      ],
+    },
+
+    // 10 (Super Difícil) - Projeto TI / Limites e Escopo
+    {
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Um consultor propôs instalar atuadores automáticos para acionar umidificadores na câmara de cultivo do Champignon de Paris. De acordo com a documentação do projeto, essa solicitação:[cite: 2]",
+      options: [
+        "Está inclusa no escopo principal, pois visa garantir a umidade relativa entre 90% e 95%.",
+        "Trata-se de uma premissa básica do projeto para validar o ciclo completo de frutificação.",
+        "Constitui um requisito funcional obrigatório do módulo de aquisição e comunicação.",
+        "Está excluída do escopo do projeto, pois este contempla apenas monitoramento e registro.",
+      ],
+      correctIndex: 3,
+    },
+
+    // 11 (Médio) - Inicialização do Computador
+    {
+      type: "mcq",
+      difficulty: "médio",
+      template:
+        "Assinale a alternativa que apresenta a ordem cronológica e correta da sequência de inicialização de um computador:[cite: 1]",
+      options: [
+        "Hardware -> SO -> BIOS -> BootLoader",
+        "BIOS -> Hardware -> BootLoader -> SO",
+        "Hardware -> BIOS -> BootLoader -> SO",
+        "BootLoader -> Hardware -> BIOS -> SO",
+      ],
+      correctIndex: 2,
+    },
+
+    // 12 (Difícil) - Champignon / Indução e Frutificação
+    {
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Durante o cultivo do Champignon de Paris (Agaricus bisporus), na fase de indução e frutificação, qual alteração ambiental específica é necessária para o desenvolvimento dos cogumelos?[cite: 2]",
+      options: [
+        "Elevar a temperatura do substrato a 80°C para esterilização final.",
+        "Reduzir a umidade relativa do ar para níveis inferiores a 40%.",
+        "Desligar totalmente os sensores para evitar a contaminação de esporos.",
+        "Aumentar a ventilação do espaço interno para reduzir o nível de CO2.",
+      ],
+      correctIndex: 3,
+    },
+
+    // 13 (Super Difícil) - PowerShell / Aliases e Cmdlets
+    {
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        'No PowerShell, comandos tradicionais como "dir" e "ps" funcionam como atalhos para cmdlets internos. O comando nativo usado para listar esses apelidos (aliases) armazenados é:[cite: 1]',
+      options: ["Get-AliasObj", "Get-Command", "Get-Process", "Get-Service"],
+      correctIndex: 1,
+    },
+
+    // 14 (Médio) - Diagnóstico e Gestão de Energia no Windows
+    {
+      type: "mcq",
+      difficulty: "médio",
+      template:
+        "Um administrador de rede precisa gerar um relatório completo da saúde da bateria de um notebook corporativo em formato HTML. Qual comando do prompt/PowerShell atende a esse objetivo?[cite: 1]",
+      options: [
+        "systeminfo /batteryreport",
+        "sfc /scannow /battery",
+        "Powercfg /batteryreport",
+        "driverquery /battery",
+      ],
+      correctIndex: 2,
+    },
+
+    // 15 (Super Difícil) - Arquitetura de SO / Pilares
+    {
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Em uma estrutura corporativa, a camada de software intermediária responsável por fornecer pontes de comunicação, APIs, autenticação e drivers entre o núcleo do SO e as aplicações é denominada:[cite: 1]",
+      options: [
+        "Kernel, que gerencia diretamente as chamadas de APIs de autenticação e os drivers.",
+        "Middleware, que disponibiliza serviços comuns, autenticação e suporte a APIs de sistema.",
+        "Shell, que executa os scripts de validação de credenciais e traduz para o hardware.",
+        "Bootloader, que inicializa os protocolos de segurança antes do carregamento da GUI.",
+      ],
+      correctIndex: 1,
+    },
+
+    // 16 (Fácil) - PowerShell / Criar arquivos
+    {
+      type: "mcq",
+      difficulty: "fácil",
+      template:
+        'Para criar um novo arquivo de texto vazio chamado "teste.txt" no diretório atual utilizando o PowerShell, utiliza-se a seguinte sintaxe:[cite: 1]',
+      options: [
+        'Make-Item "teste.txt"',
+        'Create-File "teste.txt"',
+        'Add-Content "teste.txt"',
+        'New-Item "teste.txt"',
+      ],
+      correctIndex: 3,
+    },
+
+    // 17 (Difícil) - Fases Biológicas do Champignon
+    {
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Em relação ao processo produtivo do Champignon de Paris, quais são os parâmetros técnicos de temperatura e duração recomendados para a etapa de Pasteurização?[cite: 2]",
+      options: [
+        "58°C a 60°C por um período contínuo de 6 a 10 horas de ciclo",
+        "70°C a 80°C por um período contínuo de 4 a 6 dias em estufa",
+        "45°C a 48°C por um período contínuo de 8 a 12 semanas totais",
+        "25°C a 30°C por um período contínuo de 10 a 15 dias de cultivo",
+      ],
+      correctIndex: 0,
+    },
+
+    // 18 (Super Difícil) - PowerShell / Manutenção do Windows
+    {
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Qual comando deve ser executado no terminal com privilégios administrativos para fazer uma varredura completa e corrigir automaticamente arquivos de sistema corrompidos?[cite: 1]",
+      options: ["sfc /scannow", "driverquery", "systeminfo", "Powercfg /s"],
+      correctIndex: 0,
+    },
+
+    // 19 (Médio) - Padronização de TI
+    {
+      type: "mcq",
+      difficulty: "médio",
+      template:
+        "Em uma organização com centenas de computadores, a padronização dos Sistemas Operacionais e do hardware proporciona como benefício direto:[cite: 1]",
+      options: [
+        "Eliminação da necessidade de atualizações de segurança perante falhas operacionais.",
+        "Garantia de que todo hardware antigo execute versões recentes sem testes prévios.",
+        "Redução de custos, facilidade de administração e contingenciamento mais rápido.",
+        "Substituição automática do Kernel do sistema em caso de falhas de periféricos.",
+      ],
+      correctIndex: 2,
+    },
+
+    // 20 (Super Difícil) - Incubação do Champignon
+    {
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Durante a fase de Incubação do Champignon de Paris, a literatura técnica estabelece que o substrato e a Umidade Relativa (UR) do ar devem ser mantidos, respectivamente, em:[cite: 2]",
+      options: [
+        "Substrato a 15°C e umidade relativa do ar de 50% a 60%",
+        "Substrato a 25°C e umidade relativa do ar de 90% a 95%",
+        "Substrato a 35°C e umidade relativa do ar de 70% a 75%",
+        "Substrato a 45°C e umidade relativa do ar de 30% a 40%",
+      ],
+      correctIndex: 1,
+    },
+
+    // 21 (Difícil) - Preenchimento de Lacunas / Linux (Fill)
+    {
+      type: "fill",
+      difficulty: "difícil",
+      template:
+        "No ecossistema Linux, para criar um arquivo vazio utiliza-se o comando {{0}}, enquanto para visualizar o conteúdo desse arquivo de texto no terminal usa-se o comando {{1}}.[cite: 1]",
+      blanksCorrect: ["touch", "cat"],
+      options: ["touch", "cat", "mkdir", "nano"],
+    },
+
+    // 22 (Super Difícil) - WMI no PowerShell
+    {
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Para consultar informações detalhadas e estruturadas sobre o Sistema Operacional instalado via instrumentação WMI no PowerShell, utiliza-se o cmdlet:[cite: 1]",
+      options: [
+        "Get-WmiClass -Name Win32_OperatingSystem",
+        "Get-SystemInfo -Object Win32_OperatingSystem",
+        "Get-Process -Class Win32_OperatingSystem",
+        "Get-WmiObject -Class Win32_OperatingSystem",
+      ],
+      correctIndex: 3,
+    },
+
+    // 23 (Difícil) - Validando caminhos no PowerShell
+    {
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Para evitar exceções e erros de execução em scripts PowerShell ao tentar manipular pastas inexistentes, o cmdlet utilizado para retornar True ou False sobre a existência de um caminho é:[cite: 1]",
+      options: [
+        'Test-Path -Path "C:\\dados"',
+        'Get-ChildItem -Path "C:\\dados"',
+        'Set-Location -Path "C:\\dados"',
+        'Get-Command -Path "C:\\dados"',
+      ],
+      correctIndex: 0,
+    },
+
+    // 24 (Médio) - Pilares do SO / Shell
+    {
+      type: "mcq",
+      difficulty: "médio",
+      template:
+        'Qual é a definição correta para o pilar "Shell" na arquitetura de um Sistema Operacional e quais são seus representantes práticos?[cite: 1]',
+      options: [
+        "É o núcleo do SO responsável pelo hardware; exemplos: CPU, memória RAM e Disco Rígido.",
+        "É um software intermediário de rede; exemplos: servidores web, APIs e drivers de SO.",
+        "É um interpretador de comandos do usuário; exemplos: PowerShell, Bash, Zsh e Cmd.",
+        "É o programa de inicialização gráfica da BIOS; exemplos: Firmware, UEFI e CMOS.",
+      ],
+      correctIndex: 2,
+    },
+
+    // 25 (Super Difícil) - Módulos do Projeto da Estufa
+    {
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Considerando os módulos e requisitos do projeto da estufa inteligente de cogumelos, o Módulo de Sensoriamento possui como atribuição estrita:[cite: 2]",
+      options: [
+        "Acionamento automatizado de bombas de água e exaustores.",
+        "Uso de sensor de umidade do substrato e de umidade do ar.",
+        "Exportação gráfica dos dados para aplicativo móvel iOS.",
+        "Controle de acesso físico e biossegurança na câmara real.",
+      ],
+      correctIndex: 1,
+    },
+
+    // 26 (Difícil) - Obsolescência de Hardware/SO
+    {
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Quando uma nova versão do Sistema Operacional é lançada e os dispositivos legados da empresa deixam de suportar essa atualização por restrições técnicas, ocorre uma obsolescência:[cite: 1]",
+      options: [
+        "Mecânica, caracterizada por falhas na estrutura física do equipamento fornecido.",
+        "Funcional, caracterizada por defeitos de fabricação no hardware de fábrica.",
+        "Operacional, caracterizada por incompatibilidade entre SO atualizado e o aparelho.",
+        "Restaurativa, caracterizada pela troca de peças internas na assistência técnica.",
+      ],
+      correctIndex: 2,
+    },
+
+    // 27 (Difícil) - Comandos PowerShell de Navegação e Listagem
+    {
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Ao administrar diretórios no Windows via PowerShell, os cmdlets específicos para listar os itens de uma pasta e para navegar entre diretórios são, respectivamente:[cite: 1]",
+      options: [
+        "Get-ChildItem e Set-Location",
+        "Set-Location e Get-ChildItem",
+        "Get-Content e Move-Item path",
+        "Copy-Item e Remove-Item path",
+      ],
+      correctIndex: 0,
+    },
+
+    // 28 (Difícil) - Restrições do Projeto de TI
+    {
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "No contexto de gestão do projeto da estufa de Champignon de Paris, qual das alternativas apresenta uma restrição real explicitada na documentação?[cite: 2]",
+      options: [
+        "Necessidade obrigatória de comercialização imediata do dispositivo criado no mercado.",
+        "Inexistência de energia elétrica e ausência total de sensores no mercado local.",
+        "Obrigatoriedade de uso de licenças proprietárias pagas do sistema operacional.",
+        "Ausência de atuação automática sobre o ambiente (apenas monitoramento e registro).",
+      ],
+      correctIndex: 3,
+    },
     {
       type: "mcq",
       difficulty: "super difícil",
