@@ -47,5 +47,6 @@ import { SO } from "./questions/SO.js";
 export const SUBJECTS = [
   TI,
   ARQCOMP,
-  SO
+  SO,
+  BD
 ];

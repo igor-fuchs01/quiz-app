@@ -1,8 +1,8 @@
 const BD = {
-  id: "ARQCOMP",
-  name: "ARQCOMP",
-  monogram: "ARQCOMP",
-  description: "ARQCOMP",
+  id: "BD",
+  name: "BD",
+  monogram: "BD",
+  description: "BD",
   questions: [
     {
       id: "aula02_conceitos_19",
