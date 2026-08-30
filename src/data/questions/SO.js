@@ -4,21 +4,6 @@ export const SO = {
   monogram: "SO",
   description: "SO",
   questions: [
-    // 1 (Super Difícil) - Projeto TI / Metas SMART
-    {
-      type: "mcq",
-      difficulty: "super difícil",
-      template:
-        'Ao analisar a aderência SMART da documentação do projeto da estufa inteligente para cultivo de Champignon de Paris, o critério "Mensurável" é atendido de forma objetiva por qual das condições a seguir?[cite: 2]',
-      options: [
-        "Uso de tecnologia Arduino compatível com prazo e orçamento acadêmico.",
-        "Resolução do problema de perda de lotes na maior espécie produzida no país.",
-        "Definição estrita da data de entrega conforme o cronograma do curso.",
-        "Entrega de protótipo funcional com leituras armazenadas por 8 a 12 semanas.",
-      ],
-      correctIndex: 3,
-    },
-
     // 2 (Fácil) - Linux
     {
       type: "mcq",
@@ -134,21 +119,6 @@ export const SO = {
       ],
     },
 
-    // 10 (Super Difícil) - Projeto TI / Limites e Escopo
-    {
-      type: "mcq",
-      difficulty: "super difícil",
-      template:
-        "Um consultor propôs instalar atuadores automáticos para acionar umidificadores na câmara de cultivo do Champignon de Paris. De acordo com a documentação do projeto, essa solicitação:[cite: 2]",
-      options: [
-        "Está inclusa no escopo principal, pois visa garantir a umidade relativa entre 90% e 95%.",
-        "Trata-se de uma premissa básica do projeto para validar o ciclo completo de frutificação.",
-        "Constitui um requisito funcional obrigatório do módulo de aquisição e comunicação.",
-        "Está excluída do escopo do projeto, pois este contempla apenas monitoramento e registro.",
-      ],
-      correctIndex: 3,
-    },
-
     // 11 (Médio) - Inicialização do Computador
     {
       type: "mcq",
@@ -162,21 +132,6 @@ export const SO = {
         "BootLoader -> Hardware -> BIOS -> SO",
       ],
       correctIndex: 2,
-    },
-
-    // 12 (Difícil) - Champignon / Indução e Frutificação
-    {
-      type: "mcq",
-      difficulty: "difícil",
-      template:
-        "Durante o cultivo do Champignon de Paris (Agaricus bisporus), na fase de indução e frutificação, qual alteração ambiental específica é necessária para o desenvolvimento dos cogumelos?[cite: 2]",
-      options: [
-        "Elevar a temperatura do substrato a 80°C para esterilização final.",
-        "Reduzir a umidade relativa do ar para níveis inferiores a 40%.",
-        "Desligar totalmente os sensores para evitar a contaminação de esporos.",
-        "Aumentar a ventilação do espaço interno para reduzir o nível de CO2.",
-      ],
-      correctIndex: 3,
     },
 
     // 13 (Super Difícil) - PowerShell / Aliases e Cmdlets
@@ -259,21 +214,6 @@ export const SO = {
       correctIndex: 0,
     },
 
-    // 19 (Médio) - Padronização de TI
-    {
-      type: "mcq",
-      difficulty: "médio",
-      template:
-        "Em uma organização com centenas de computadores, a padronização dos Sistemas Operacionais e do hardware proporciona como benefício direto:[cite: 1]",
-      options: [
-        "Eliminação da necessidade de atualizações de segurança perante falhas operacionais.",
-        "Garantia de que todo hardware antigo execute versões recentes sem testes prévios.",
-        "Redução de custos, facilidade de administração e contingenciamento mais rápido.",
-        "Substituição automática do Kernel do sistema em caso de falhas de periféricos.",
-      ],
-      correctIndex: 2,
-    },
-
     // 20 (Super Difícil) - Incubação do Champignon
     {
       type: "mcq",
@@ -344,21 +284,6 @@ export const SO = {
       correctIndex: 2,
     },
 
-    // 25 (Super Difícil) - Módulos do Projeto da Estufa
-    {
-      type: "mcq",
-      difficulty: "super difícil",
-      template:
-        "Considerando os módulos e requisitos do projeto da estufa inteligente de cogumelos, o Módulo de Sensoriamento possui como atribuição estrita:[cite: 2]",
-      options: [
-        "Acionamento automatizado de bombas de água e exaustores.",
-        "Uso de sensor de umidade do substrato e de umidade do ar.",
-        "Exportação gráfica dos dados para aplicativo móvel iOS.",
-        "Controle de acesso físico e biossegurança na câmara real.",
-      ],
-      correctIndex: 1,
-    },
-
     // 26 (Difícil) - Obsolescência de Hardware/SO
     {
       type: "mcq",
@@ -385,49 +310,6 @@ export const SO = {
         "Set-Location e Get-ChildItem",
         "Get-Content e Move-Item path",
         "Copy-Item e Remove-Item path",
-      ],
-      correctIndex: 0,
-    },
-
-    // 28 (Difícil) - Restrições do Projeto de TI
-    {
-      type: "mcq",
-      difficulty: "difícil",
-      template:
-        "No contexto de gestão do projeto da estufa de Champignon de Paris, qual das alternativas apresenta uma restrição real explicitada na documentação?[cite: 2]",
-      options: [
-        "Necessidade obrigatória de comercialização imediata do dispositivo criado no mercado.",
-        "Inexistência de energia elétrica e ausência total de sensores no mercado local.",
-        "Obrigatoriedade de uso de licenças proprietárias pagas do sistema operacional.",
-        "Ausência de atuação automática sobre o ambiente (apenas monitoramento e registro).",
-      ],
-      correctIndex: 3,
-    },
-    {
-      type: "mcq",
-      difficulty: "super difícil",
-      template:
-        "A diretoria de uma multinacional sofreu um ataque de ransomware. Graças à rigorosa política de TI adotada no ano anterior, a equipe de segurança aplicou um script que isolou as máquinas, formatou os discos e restaurou backups idênticos em menos de duas horas, com mínima paralisação. Qual pilar estratégico da TI garantiu esse sucesso?",
-      options: [
-        "A obsolescência mecânica programada de todos os servidores de backup.",
-        "A utilização exclusiva de sistemas operacionais baseados na nuvem pública.",
-        "A diversidade extrema de sistemas e hardware entre todos os colaboradores.",
-        "A dependência de um Shell altamente complexo para gerenciar incidentes.",
-        "A padronização da TI, que possibilitou o contingenciamento rápido e processos claros.",
-      ],
-      correctIndex: 4,
-    },
-    {
-      type: "mcq",
-      difficulty: "média",
-      template:
-        "Durante uma manutenção, um técnico de TI percebe que os comandos digitados no terminal (ex: 'ls' ou 'dir') não estão retornando resultados, embora o núcleo do sistema esteja ativo. Qual camada do sistema operacional falhou ao interpretar as instruções?",
-      options: [
-        "O Shell, que atua como o interpretador direto dos comandos do usuário.",
-        "O Kernel, que não conseguiu identificar fisicamente o disco rígido atual.",
-        "O Middleware, que perdeu a comunicação com o banco de dados principal.",
-        "O Bootloader, que não inicializou o computador da maneira mais correta.",
-        "O BIOS, que bloqueou o acesso do usuário à camada de hardware de vídeo.",
       ],
       correctIndex: 0,
     },
@@ -472,20 +354,6 @@ export const SO = {
         "Como um Middleware, um software intermediário prestando serviços comuns.",
       ],
       correctIndex: 4,
-    },
-    {
-      type: "mcq",
-      difficulty: "difícil",
-      template:
-        "Em uma grande rede de varejo, uma atualização do Windows foi disparada sem planejamento em 300 notebooks diferentes. Metade deles falhou ao tentar aplicar a atualização devido a incompatibilidades. Qual problema fundamental de gestão gerou essa crise sistêmica?",
-      options: [
-        "A presença de malwares que danificaram o Hypervisor das máquinas da rede.",
-        "A falta de isolamento da camada de Shell nos notebooks dos colaboradores.",
-        "O uso excessivo de Middlewares que sobrecarregaram o Kernel dos sistemas.",
-        "A falta de padronização da TI, resultando em ambientes desiguais e frágeis.",
-        "A incompatibilidade técnica da Camada de Abstração de Hardware (HAL) da rede.",
-      ],
-      correctIndex: 3,
     },
     {
       type: "mcq",
@@ -556,20 +424,6 @@ export const SO = {
         "Porque ele representa o BIOS do computador, que ao falhar, desliga imediatamente a fonte de energia da placa-mãe.",
       ],
       correctIndex: 2,
-    },
-    {
-      type: "mcq",
-      difficulty: "difícil",
-      template:
-        "Um gerente de TI decidiu substituir o modelo onde cada funcionário escolhia seu computador e sistema operacional por um modelo onde todos usam a mesma imagem de sistema. Como resultado, o tempo de suporte caiu pela metade. Qual pilar da padronização foi mais impactado?",
-      options: [
-        "A facilidade de administração e gestão eficiente dos recursos de TI.",
-        "O contingenciamento rápido através da abstração total do hardware.",
-        "A virtualização completa dos desktops para a nuvem da corporação.",
-        "A obsolescência mecânica que reduziu o tempo de vida útil das peças.",
-        "A eliminação da necessidade de atualizações regulares de segurança.",
-      ],
-      correctIndex: 0,
     },
     {
       type: "mcq",
@@ -715,20 +569,6 @@ export const SO = {
       type: "mcq",
       difficulty: "difícil",
       template:
-        "Em uma fusão de duas grandes empresas, uma utilizava servidores com hypervisores nativos (Type 1), enquanto a outra utilizava servidores com hypervisores rodando sobre o Windows Server (Type 2). Para o ambiente de produção crítico, a TI escolheu migrar tudo para a tecnologia Type 1. Qual a razão técnica para essa escolha?",
-      options: [
-        "O Hypervisor Type 1 exige um sistema operacional hospedeiro completo, o que aumenta a facilidade de uso.",
-        "O Hypervisor Type 1 oferece menor isolamento, permitindo que as aplicações conversem diretamente entre si.",
-        "O Hypervisor Type 1 elimina o overhead do Middleware corporativo na gestão de senhas do servidor central.",
-        "O Hypervisor Type 1 acessa diretamente o hardware físico, resultando em maior desempenho e menor latência.",
-        "O Hypervisor Type 1 transforma a obsolescência de hardware em um processo inteiramente automatizado na nuvem.",
-      ],
-      correctIndex: 3,
-    },
-    {
-      type: "mcq",
-      difficulty: "difícil",
-      template:
         "Durante a inicialização de um servidor seguro, há uma cadeia estrita de confiança. O sistema liga, o BIOS faz o POST, em seguida passa o controle para o Bootloader, que por fim carrega o Kernel. Se o Kernel for carregado, mas não conseguir montar o sistema de arquivos principal, em que ponto exato a abstração falhou?",
       options: [
         "No carregamento do Middleware, que não converteu os dados lógicos para dados físicos no disco rígido.",
@@ -738,20 +578,6 @@ export const SO = {
         "No Shell do sistema operacional, que rejeitou as instruções automatizadas de particionamento físico.",
       ],
       correctIndex: 2,
-    },
-    {
-      type: "mcq",
-      difficulty: "difícil",
-      template:
-        "Uma montadora de carros utiliza uma aplicação legada de gerenciamento de robôs que roda exclusivamente no antigo MS-DOS. Para manter essa aplicação ativa em um computador moderno com Windows 11, a equipe de TI precisou utilizar uma camada de software específica. Que conceito de sistemas operacionais foi aplicado?",
-      options: [
-        "A Emulação/Virtualização, que recria lógicamente o ambiente do MS-DOS sobre o sistema moderno.",
-        "A Padronização extrema, que força o Windows 11 a desabilitar sua própria interface gráfica (GUI).",
-        "O uso de Middlewares, que convertem chamadas de rede da nuvem em sinais elétricos para o robô.",
-        "A Obsolescência Programada, que reverte os drivers do computador novo para versões de trinta anos atrás.",
-        "A execução via Shell Scripting do núcleo monolítico integrado na inicialização (Bootloader).",
-      ],
-      correctIndex: 0,
     },
     {
       type: "mcq",
