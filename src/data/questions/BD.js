@@ -1,400 +1,358 @@
-const BD = {
+export const BD = {
   id: "BD",
   name: "BD",
   monogram: "BD",
   description: "BD",
   questions: [
     {
-      id: "aula02_conceitos_19",
-      dificuldade: "Muito Difícil",
-      enunciado:
-        "Um incidente de cibersegurança afetou uma tabela de auditoria hospitalar. O Analista Pleno solicitou ao DBA que o tamanho do campo 'LogAcesso' fosse modificado de VARCHAR(255) para TEXT e, sequencialmente, que o IP '192.168.0.5' fosse purgado (deletado) dos registros comprometidos já gravados. Avaliando de forma microscópica as camadas linguísticas do banco de dados relacional, qual o veredito exato da aplicação de ações requeridas pelo DBA?",
-      opcoes: {
-        A: "A primeira ação configura-se como uma modificação estrutural pontual via comando MODIFY no domínio da DML; a segunda configura-se como uma remoção específica de tuplas via instrução DROP inserida no escopo da DDL.",
-        B: "A primeira ação configura-se como uma manipulação estrutural formal via comando UPDATE no domínio da DDL; a segunda configura-se como uma remoção total de tuplas via instrução TRUNCATE inserida no escopo da DML.",
-        C: "A primeira ação configura-se como uma redefinição sistêmica formal via comando ALTER no domínio da DDL; a segunda configura-se como uma remoção específica de tuplas via instrução DELETE inserida no escopo da DML.",
-        D: "A primeira ação configura-se como uma redefinição sistêmica formal via comando ALTER no domínio da DML; a segunda configura-se como uma remoção específica de tabelas via instrução DELETE inserida no escopo da DCL.",
-        E: "A primeira ação configura-se como uma reestruturação relacional complexa via comando ALTER no domínio da DDL; a segunda configura-se como uma revogação imediata de atributos via instrução REVOKE inserida no escopo da DCL.",
-      },
-      correta: "C",
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Nos primórdios da computação na década de 1960, a alta interoperabilidade departamental esbarrava no obstáculo da modelagem crua, onde um 'Programa Delta', ao intentar requisitar dados do 'Programa Sigma', chocava-se contra um paradigma onde o conhecimento do método proprietário de gravação de bytes era um pré-requisito inescapável. Sob o prisma da evolução arquitetural dos dados, qual foi o avanço tangível entregue pelo elemento do SGBD denominado 'Metadado' que liquidou este impasse interdepartamental?",
+      options: [
+        "O mecanismo de Metadado suprimiu a proliferação anárquica obrigando estritamente os engenheiros a convergirem suas implementações para os ritos do antigo modelo CODASYL de redes complexas transpassadas através de grafos rigidamente definidos em linguagem C de baixo nível.",
+        "O mecanismo de Metadado orquestrou a clonagem autônoma e descentralizada das bases vitais de forma iterativa, instanciando repositórios completos e inertes nas memórias RAM particulares de cada sistema, desonerando conexões diretas nos processamentos concorrentes.",
+        "O mecanismo de Metadado transformou o SGBD na única entidade responsável por portar e centralizar as descrições intrincadas das matrizes lógicas e físicas, atuando como um barramento que exime solenemente os diversos sistemas clientes do ônus de mapear bytes a nível de disco rígido.",
+        "O mecanismo de Metadado encapsulou-se na integridade das bibliotecas internas de cada aplicação individualmente, provocando uma metamorfose em que cada framework externo atuava imperativamente como um fragmento de SGBD autônomo acoplado no coração das camadas de negócio locais.",
+      ],
+      correctIndex: 2,
     },
     {
-      id: "aula02_conceitos_17",
-      dificuldade: "Difícil",
-      enunciado:
-        "Um veículo espacial em reentrada atmosférica calcula trajetórias orbitais críticas a cada microssegundo, salvando as parciais diretas na memória L1. Levando em consideração a natureza de um SGBD genérico moderno, o que desqualificaria seu emprego nessa camada de voo autônoma?",
-      opcoes: {
-        A: "A incompatibilidade gritante com restrições flexíveis de processos transacionais contínuos de backup e os altíssimos retornos informacionais fornecidos.",
-        B: "A incompatibilidade gritante com restrições extremas de tempo real (latência estrutural zero) demandadas e os altíssimos custos computacionais exigidos.",
-        C: "A incompatibilidade gritante com transações seguras e criptografadas de dados relacionais espaciais e os altíssimos custos computacionais exigidos.",
-        D: "A incompatibilidade gritante com linguagens orientadas a objeto aplicadas a equipamentos geográficos e os altíssimos custos computacionais exigidos.",
-        E: "A incompatibilidade gritante com conexões de banda larga intermitentes e ambientes em múltiplos arrays e os baixos volumes de hardware embarcado.",
-      },
-      correta: "B",
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Durante o refatoramento complexo do serviço de biometria facial, uma tabela de alta dependência cruzada 'Pessoa' passou pela aprovação do seguinte comando: 'ALTER TABLE Pessoa DROP COLUMN dtNascimento;'. No ecossistema tecnológico integrado da instituição, várias aplicações satélites antigas conectadas utilizam sintaxes DML como 'SELECT * FROM Pessoa'. Baseado puramente nos comportamentos arquiteturais subjacentes de um banco de dados relacional clássico acoplado a SGBDs padrão de mercado, qual é a ramificação sistêmica exata desencadeada por este expurgo em produção?",
+      options: [
+        "O ambiente de processamento inferirá a ausência vitalétrica, criando por deduções implícitas do motor de integração um sinônimo de acesso transparente. Qualquer requisição obsoleta voltada ao 'dtNascimento' será milagrosamente repassada pelo sistema para o ID primário mitigando a quebra imediata de scripts.",
+        "O SGBD, imbuído de lógicas de proteção relacional autônomas, monitorará as conexões concorrentes bloqueando silenciosamente a submissão do DROP caso o algoritmo interno compute estatisticamente que a dita coluna tem sido alvo de leituras constantes pelo serviço backend num recorte temporal recente.",
+        "O campo deixará de existir perpetuamente no modelo físico; entretanto, componentes legados que apelam genericamente para o 'SELECT *' absorverão os dados restantes com êxito adaptativo, ao passo que eventuais views e subqueries ancoradas fixamente no rótulo expresso 'dtNascimento' irão irremediavelmente colapsar na extração.",
+        "O comando DDL surtirá tão e unicamente um efeito efêmero de encapsulamento virtual sobre a visualização gerencial da entidade, permitindo que todas as aplicações dependentes perpetuem suas inserções nativas mascaradas utilizando um proxy de cache pré-compilado na memória do servidor local.",
+      ],
+      correctIndex: 2,
     },
     {
-      id: "aula02_conceitos_11",
-      dificuldade: "Difícil",
-      enunciado:
-        "A gerência de logística exigiu a inclusão do rastreio GPS para frotas. O DBA deve incluir a coluna 'Coordenadas' e depois populá-la com o valor 'Pendente' nos registros inativos. Quais comandos estruturais e transacionais, respectivamente, concluem perfeitamente essa demanda?",
-      opcoes: {
-        A: "Primeiramente aplica-se o comando MODIFY TABLE (DDL) para moldar a tabela, e sequencialmente o comando UPDATE (DML) para gravar o status.",
-        B: "Primeiramente aplica-se o comando ALTER TABLE (DDL) para moldar a tabela, e sequencialmente o comando MODIFY (DML) para gravar o status.",
-        C: "Primeiramente aplica-se o comando ALTER TABLE (DDL) para moldar a tabela, e sequencialmente o comando UPDATE (DML) para gravar o status.",
-        D: "Primeiramente aplica-se o comando CREATE TABLE (DDL) para moldar a tabela, e sequencialmente o comando INSERT (DML) para gravar o status.",
-        E: "Primeiramente aplica-se o comando ALTER TABLE (DML) para moldar a tabela, e sequencialmente o comando UPDATE (DDL) para gravar o status.",
-      },
-      correta: "C",
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Um grande ecossistema tecnológico lida com sensores enviando milhões de requisições por hora na forma de metadados brutos e altamente mutáveis. O conselho de TI delibera trocar a arquitetura legada para uma que possua esquema puramente dinâmico, forte escalonamento horizontal e distribuição intrínseca. Essa decisão os direciona estrategicamente para:",
+      options: [
+        "Modelos de Bancos de Dados NoSQL, que não dependem apenas da linguagem estruturada padrão e são altamente projetados para comportar fluxos colossais típicos da era do Big Data.",
+        "Bancos de Dados Relacionais padronizados, haja vista sua escalabilidade horizontal irrestrita e capacidade dinâmica de alterar esquemas sem a interferência explícita de comandos DDL.",
+        "Sistemas Baseados em Arquivos Departamentais, estruturados essencialmente através de processos de indexação isolados para evitar contenção de memória lógica compartilhada.",
+        "Modelos de Bancos de Dados Hierárquicos nativos, suportados preferencialmente por linguagens orientadas a objeto e estruturados logicamente no padrão clássico UML.",
+      ],
+      correctIndex: 0,
     },
     {
-      id: "aula02_conceitos_22",
-      dificuldade: "Muito Difícil",
-      enunciado:
-        "Modelos em Rede tratavam multiplicidades N:M utilizando encadeamentos lógicos entre as fronteiras dos registros via CODASYL. Codd revolucionou ao extinguir a necessidade desses ponteiros. Considerando o estado da arte do esquema relacional de Codd padronizado posteriormente, como a cardinalidade muitos-para-muitos desvencilhou-se dessa amarra topológica mantendo a pureza matemática baseada puramente em chaves primárias bidirecionais?",
-      opcoes: {
-        A: "A resolução cristalizou-se na eliminação de entidades associativas cruzadas nativamente pelo SGBD, exigindo que as identificações primárias dos entes fossem unificadas em uma única estrutura colunar composta, simulando com êxito os antigos arrays encadeados dinâmicos.",
-        B: "A resolução cristalizou-se na absorção da cardinalidade máxima no lado da entidade forte, que instancia simultaneamente vetores alocados na memória dos entes conectados e os submete cooperativamente ao controle rígido de chaves estrangeiras multidimensionais e irrestritas.",
-        C: "A resolução cristalizou-se na derivação de um novo subgrafo de associação matriz-ponteiro, que absorve simultaneamente os índices primários dos entes conectados e os promove cooperativamente ao status de atributos redundantes dentro de suas referidas hierarquias isoladas.",
-        D: "A resolução cristalizou-se na derivação de uma nova entidade tabular relacional intermediária, que herda simultaneamente as identificações primárias dos entes conectados e as promove cooperativamente ao status de chaves estrangeiras conjugadas dentro de sua própria geografia.",
-        E: "A resolução cristalizou-se na derivação de uma nova entidade tabular relacional estática, que herda alternadamente as identificações secundárias dos entes não-relacionais adjacentes e as promove separadamente ao status de chaves criptografadas autônomas e indelegáveis.",
-      },
-      correta: "D",
+      type: "fill",
+      difficulty: "difícil",
+      template:
+        "No passado, as empresas sofriam com a acentuada {{0}} existente entre o código dos programas e a matriz de dados, forçando regravações pesadas a cada ajuste. A inserção da arquitetura centralizada com SGBDs proveu a almejada {{1}}, dissociando completamente as modificações no banco da sintaxe das regras de negócios da aplicação.",
+      blanksCorrect: ["Dependência", "Independência"],
+      options: ["Dependência", "Independência", "Complexidade", "Sabedoria"],
     },
     {
-      id: "aula02_conceitos_28",
-      dificuldade: "Muito Difícil",
-      enunciado:
-        "A Primary Key, espinha dorsal da álgebra referencial idealizada, assegura a individualidade hermética e insubstituível das entidades tabuladas em todo o ecossistema SGBD. Delineando os corolários inquebrantáveis que brotam da seleção mecânica desse construto específico sobre a coluna 'Código_Serial' em um registro de fábrica de maquinário aeronáutico, qual pilar restritivo é cravado imperiosamente a nível físico-lógico do sistema na exata concepção da chave?",
-      opcoes: {
-        A: "Ergue-se a restrição analítica irremovível de que em todas as esferas computacionais futuras ancoradas nesse sistema corporativo purista isolado, as matrizes atreladas a este pilar absorverão a duplicidade operacional forçada sem incorrer em interrupções abruptas do mecanismo processual interno caso a violação seja mascarada pela manipulação do espaço nulo sistêmico tolerado (branco relacional).",
-        B: "Ergue-se a prerrogativa irrevogável de que em toda e qualquer instância gravada superficialmente nessa matriz analítica flexível, o campo associado a este referencial admitirá a sobreposição nula de estados desconhecidos (ausência relativa formal tolerada) desde que protegido hermeticamente contra cruzamentos idênticos perigosos advindos da rede hierárquica transversal originária.",
-        C: "Ergue-se a prerrogativa incontestável de que em toda e qualquer instância histórica ou futura gravada nessa coleção matemática, o vetor subjacente sob este pilar estará permanentemente expurgado de dubiedades (ausência formal de nulos) e totalmente vacinado contra clonagens semânticas exatas na sua linhagem primária (valores idênticos prévios).",
-        D: "Ergue-se a prerrogativa incontestável de que em toda e qualquer transação de inserção sequencial nessa organização em rede padronizada, o vetor subjacente correspondente sofrerá a redefinição arbitrária baseada puramente na exclusão contínua em cascata imediata e protegida perfeitamente contra inconsistências sistêmicas derivadas puramente da linguagem DCL empregada pelo construtor do modelo.",
-        E: "Ergue-se a imposição técnica relacional limitante que assegura firmemente a vinculação externa inabalável de que toda instância presente nas filiais ligadas indiretamente a esta relação central deva repassar compulsoriamente este atributo isolado perante qualquer tentativa de reconfiguração de registros nulos sem duplicidade (valores limpos espelhados isolados horizontalmente da rede original padronizada e otimizada).",
-      },
-      correta: "C",
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Apesar do consenso mercadológico sobre os benefícios dos SGBDs, existem cenários raros onde sua implantação seria inadequada. Um engenheiro de software desenha um chip para frenagem autônoma de um trem-bala, onde memória interna é ínfima e a instrução deve completar execução estritamente em bilionésimos de segundo. Empregando os conhecimentos teóricos discutidos:",
+      options: [
+        "O uso do SGBD é plenamente recomendado e trivial, pois plataformas relacionais atuais foram desenvolvidas nativamente de forma a impedir qualquer impacto em memórias secundárias.",
+        "O uso do SGBD é circunstancialmente indiferente ao domínio proposto, na medida que o rendimento físico dependerá irrestritamente apenas do tamanho das chaves primárias alocadas na tabela.",
+        "O uso do SGBD é desaconselhado neste cenário fechado, uma vez que requisitos absurdamente rigorosos de tempo real crítico dificilmente seriam suportados pela sobrecarga operacional do gerenciador.",
+        "O uso do SGBD é mandatório para assegurar a inviolabilidade, garantindo que toda a cadeia de processamento físico de frenagens seja registrada com redundância paralela instantânea.",
+      ],
+      correctIndex: 2,
     },
     {
-      id: "aula02_conceitos_07",
-      dificuldade: "Média",
-      enunciado:
-        "Como a disposição lógica e a navegabilidade física das informações eram tratadas no clássico modelo estrutural hierárquico?",
-      opcoes: {
-        A: "Os registros estão rigorosamente organizados em matrizes, onde um nó pai pode possuir múltiplos nós filhos vinculados a ele diretamente.",
-        B: "Os registros estão rigorosamente organizados em árvores, onde um nó filho pode possuir múltiplos nós pais vinculados a ele diretamente.",
-        C: "Os registros estão rigorosamente organizados em grafos, onde um nó pai pode possuir múltiplos nós filhos vinculados a ele diretamente.",
-        D: "Os registros estão rigorosamente organizados em árvores, onde um nó pai pode possuir múltiplos nós filhos vinculados a ele diretamente.",
-        E: "Os registros estão rigorosamente organizados em grafos, onde um nó filho pode possuir múltiplos nós pais vinculados a ele diretamente.",
-      },
-      correta: "D",
+      type: "fill",
+      difficulty: "super difícil",
+      template:
+        "Avaliando as minúcias estruturais relativas a strings e ordenações numéricas do SGBD, imagine que na composição de uma tabela provisória o analista injete alunos contendo os códigos RAs nominais ('10', '2', '20') em uma coluna deliberadamente forjada sob o formato VARCHAR(10). Na emissão da diretiva SQL acompanhada pela sintaxe ORDER BY ASC, os RAs eclodirão visualmente na cadeia léxica ordenados como {{0}}. Em paralelo, se operássemos um CAST imediato ou reformulação estrutural fixando o modelo em INT, a ordem ascendente extraída e visualizada pelo driver cliente espelharia matematicamente {{1}}.",
+      blanksCorrect: ["'10', '2', '20'", "'2', '10', '20'"],
+      options: [
+        "'10', '2', '20'",
+        "'2', '10', '20'",
+        "'20', '10', '2'",
+        "'2', '20', '10'",
+      ],
     },
     {
-      id: "aula02_conceitos_06",
-      dificuldade: "Média",
-      enunciado:
-        "Um analista necessita revogar urgentemente privilégios de acesso que haviam sido concedidos a um auditor. Como ele procede?",
-      opcoes: {
-        A: "Utilizando o comando REVOKE, que pertence à subcategoria Data Control Language (DCL) e serve para retirar direitos atribuídos.",
-        B: "Utilizando o comando DELETE, que pertence à subcategoria Data Control Language (DCL) e serve para retirar direitos atribuídos.",
-        C: "Utilizando o comando DROP, que pertence à subcategoria Data Control Language (DCL) e serve para retirar direitos atribuídos.",
-        D: "Utilizando o comando REVOKE, que pertence à subcategoria Data Definition Language (DDL) e serve para retirar direitos atribuídos.",
-        E: "Utilizando o comando ALTER, que pertence à subcategoria Data Manipulation Language (DML) e serve para retirar direitos atribuídos.",
-      },
-      correta: "A",
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Durante uma manutenção não programada, um estagiário executou 'DELETE FROM Vendas;' e logo depois o Analista Sênior executou 'TRUNCATE TABLE Vendas;'. Assumindo a ausência de impedimentos por chaves estrangeiras, qual a diferença essencial de comportamento interno entre esses comandos na infraestrutura relacional?",
+      options: [
+        "Não existe absolutamente nenhuma diferença de processamento ou impacto lógico, uma vez que ambos são comandos do grupo DDL designados para limpar dependências lógicas preexistentes.",
+        "O comando DELETE remove os registros mas não reseta as configurações internas como o auto-incremento da tabela, enquanto o comando TRUNCATE limpa os dados e reseta completamente a estrutura base da tabela.",
+        "Ambos excluem fisicamente a tabela do disco rígido de forma irrecuperável, porém apenas o TRUNCATE mantém os índices salvos temporariamente na memória RAM do sistema gerenciador.",
+        "O comando DELETE apenas oculta as linhas para o usuário atual sem apagar os dados do disco, ao passo que o TRUNCATE efetiva a remoção permanente e lógica de toda a base de informações.",
+      ],
+      correctIndex: 1,
     },
     {
-      id: "aula02_conceitos_12",
-      dificuldade: "Difícil",
-      enunciado:
-        "Numa equipe de engenharia bancária, Roberto está entrevistando caixas para descobrir como lidam com transferências diárias, enquanto Mariana está definindo os tipos numéricos e textuais para arquivar essas rotinas. Segundo a divisão formal de atores de SGBD, quais são as posições de ambos?",
-      opcoes: {
-        A: "Roberto atua estritamente como Projetista de Banco de Dados em rede; Mariana atua estritamente como Analista de Sistemas de negócio puro.",
-        B: "Roberto atua estritamente como Analista de Sistemas de negócio; Mariana atua estritamente como Projetista de Banco de Dados relacional.",
-        C: "Roberto atua estritamente como Analista de Sistemas de negócio; Mariana atua estritamente como Administradora de Banco de Dados em rede.",
-        D: "Roberto atua estritamente como Administrador de Dados de negócio; Mariana atua estritamente como Projetista de Banco de Dados relacional.",
-        E: "Roberto atua estritamente como Analista de Banco de Dados relacional; Mariana atua estritamente como Projetista de Sistemas de negócio.",
-      },
-      correta: "B",
+      type: "fill",
+      difficulty: "difícil",
+      template:
+        "A governança de dados identificou que um analista não deveria ter permissões de deleção de registros sensíveis e emitiu o comando {{0}} sobre o seu perfil. Durante a integração da equipe no mês anterior, esse mesmo analista havia recebido o acesso primário justamente por meio do comando {{1}}. Estas instruções fazem parte do escopo de controle (DCL).",
+      blanksCorrect: ["REVOKE", "GRANT"],
+      options: ["REVOKE", "GRANT", "DENY", "ALLOW"],
     },
     {
-      id: "aula02_conceitos_15",
-      dificuldade: "Difícil",
-      enunciado:
-        "As grandes corporações contam com atores de bastidores. João otimiza os binários e módulos de segurança de encriptação primária do SGBD, e Carlos projeta scripts externos para simular 10.000 requisições simultâneas de usuários por minuto. Qual a nomenclatura exata desses especialistas técnicos?",
-      opcoes: {
-        A: "João desempenha a função de Desenvolvedor Utilizante de Sistemas SGBD; Carlos desempenha a função utilitária de Projetista de Banco de Dados.",
-        B: "João desempenha a função de Administrador e Mantenedor de Infra SGBD; Carlos desempenha a função utilitária de Desenvolvedor de Ferramentas.",
-        C: "João desempenha a função de Projetista/Implementador de Sistemas SGBD; Carlos desempenha a função utilitária de Administrador de Banco Operacional.",
-        D: "João desempenha a função de Operador/Especialista de Hardware SGBD; Carlos desempenha a função utilitária de Analista e Integrador Ferramentas.",
-        E: "João desempenha a função de Projetista/Implementador de Sistemas SGBD; Carlos desempenha a função utilitária de Desenvolvedor de Ferramentas.",
-      },
-      correta: "E",
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Na arquitetura relacional de um ERP contemporâneo, avalia-se a integridade sistêmica da tabela 'Pedido', a qual detém uma coluna 'cod_cliente'. Esta coluna foi modelada propositalmente para apontar sempre para a restrição primária (id) presente na matriz da tabela 'Cliente'. Esse mecanismo de amarração referencial é formalmente denominado de:",
+      options: [
+        "Chave Primária (Primary Key), caracterizando-se por atuar como o principal localizador de instâncias dentro de um mesmo domínio contínuo para aquele pedido restrito.",
+        "Índice Estruturado (Index Constraint), caracterizando-se por compilar os múltiplos parâmetros presentes otimizando pesadamente o custo binário das consultas internas.",
+        "Restrição Isolada (Unique Constraint), caracterizando-se por certificar de maneira excludente que aquele cliente fará a requisição de tão somente um único pedido em toda sua vida útil.",
+        "Chave Estrangeira (Foreign Key), caracterizando-se por atuar como o elo de integridade que vincula os dados de uma tabela de volta à chave mestre de outra.",
+      ],
+      correctIndex: 3,
     },
     {
-      id: "aula02_conceitos_10",
-      dificuldade: "Difícil",
-      enunciado:
-        "Durante uma consultoria de arquitetura empresarial, os dados precisam transitar desde as regras de negócio puras até o software implementado. Considerando a visão macro teórica do projeto de banco de dados, como se desenvolve a camada focada exclusivamente na estruturação?",
-      opcoes: {
-        A: "Flui do modelo Lógico baseado em Informação para o modelo Conceitual ancorado no SGBD, desaguando nos limites do sistema processual.",
-        B: "Flui do modelo Conceitual baseado em Processos para o modelo Lógico ancorado em Programas, desaguando nos limites do sistema físico.",
-        C: "Flui do modelo Conceitual baseado em Informação para o modelo Físico ancorado no SGBD, desaguando nos limites do sistema processual.",
-        D: "Flui do modelo Conceitual baseado em Informação para o modelo Lógico ancorado no SGBD, desaguando nos limites do sistema físico.",
-        E: "Flui do modelo Físico baseado em Informação para o modelo Lógico ancorado no SGBD, desaguando nos limites do sistema conceitual.",
-      },
-      correta: "D",
+      type: "select",
+      difficulty: "difícil",
+      template:
+        "Ao tentarmos adicionar um registro na tabela 'Sensor' incluindo o valor 'manutencao' no status, ocorre um erro 3819 imediato. A restrição violada que forçava valores precisos da lista ('ativo', 'inativo') é a {{0}}. Se quisermos garantir que o SGBD assinale 'ativo' sozinho sempre que o usuário omitir essa informação no INSERT, implementamos a restrição {{1}}.",
+      blanksOptions: [
+        ["CHECK", "UNIQUE", "INDEX"],
+        ["DEFAULT", "PRIMARY KEY", "NOT NULL"],
+      ],
+      blanksCorrect: ["CHECK", "DEFAULT"],
     },
     {
-      id: "aula02_conceitos_25",
-      dificuldade: "Muito Difícil",
-      enunciado:
-        "Considere o teatro de operações dos recursos humanos alocados à engenharia SGBD: o agente Alpha codifica camadas sub-reptícias no núcleo de alocação de buffers para viabilizar indexações otimizadas B-Tree; o agente Beta projeta extensões dashboard plugáveis que injetam milhões de threads randômicas no SGBD testando gargalos operacionais. Sob a ótica da pirâmide estrutural dos bastidores da plataforma, qual o enquadramento exato desses indivíduos?",
-      opcoes: {
-        A: "O papel atribuído a Alpha confunde-se irrevogavelmente com os escopos periféricos focados no desenvolvimento utilitário de ferramentas externas essenciais; a conduta de Beta classifica-se indubitavelmente no raio de atuação dos Projetistas de Infraestrutura Lógica nativos do banco central.",
-        B: "O papel atribuído a Alpha confunde-se irrevogavelmente com os escopos transacionais genéricos dos Administradores Lógicos e Físicos de Dados (DBA); a conduta de Beta classifica-se indubitavelmente no raio de atuação periférica dos Programadores Nativos de Aplicações corporativas.",
-        C: "O papel atribuído a Alpha confunde-se irrevogavelmente com os escopos fundacionais dos Projetistas e Implementadores nativos do SGBD; a conduta de Beta classifica-se indubitavelmente no raio de atuação periférica dos Desenvolvedores especializados em Ferramentas.",
-        D: "O papel atribuído a Alpha confunde-se irrevogavelmente com os escopos fundacionais dos Projetistas e Extratores Analíticos do Negócio; a conduta de Beta classifica-se indubitavelmente no raio de atuação nuclear dos Desenvolvedores Estruturais focados inteiramente no SGBD principal.",
-        E: "O papel atribuído a Alpha confunde-se irrevogavelmente com os escopos fundacionais dos Operadores Técnicos e Supervisores de Manutenção Física; a conduta de Beta classifica-se indubitavelmente no raio de atuação periférica dos Programadores Avançados e Administradores de Logs.",
-      },
-      correta: "C",
+      type: "mcq",
+      difficulty: "média",
+      template:
+        "Após a implementação do banco de dados em produção, o time notou que a tabela 'Produto' possuía uma coluna chamada 'dtFabricacao', mas as diretrizes de padronização da empresa exigiam o nome 'dt_fabricacao'. Qual comando DDL promove a adequação sem provocar perda estrutural?",
+      options: [
+        "ALTER TABLE Produto MODIFY COLUMN dtFabricacao VARCHAR(50);",
+        "ALTER TABLE Produto RENAME COLUMN dtFabricacao TO dt_fabricacao;",
+        "ALTER TABLE Produto ALTER COLUMN dtFabricacao dt_fabricacao;",
+        "ALTER TABLE Produto CHANGE dtFabricacao TO dt_fabricacao;",
+      ],
+      correctIndex: 1,
     },
     {
-      id: "aula02_conceitos_13",
-      dificuldade: "Difícil",
-      enunciado:
-        "Em uma infraestrutura de folha de pagamento, um atributo de chave estrangeira foi introduzido na tabela de 'Holerites'. Qual o exato propósito funcional que garante a segurança sistêmica dessa modelagem adotada?",
-      opcoes: {
-        A: "A referida chave estrangeira obriga o apontamento exclusivo para uma chave primária de outra tabela, prevenindo o isolamento da relação.",
-        B: "A referida chave estrangeira flexibiliza o apontamento exclusivo para uma chave secundária de outra tabela, acelerando o isolamento relacional.",
-        C: "A referida chave secundária flexibiliza o apontamento exclusivo para uma chave primária de outra tabela, prevenindo o isolamento da relação.",
-        D: "A referida chave primária obriga o apontamento exclusivo para uma chave estrangeira de outra tabela, prevenindo o isolamento da relação.",
-        E: "A referida chave estrangeira obriga o apontamento exclusivo para uma chave estrangeira de outra tabela, prevenindo o isolamento da relação.",
-      },
-      correta: "A",
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Uma equipe de auditoria financeira solicitou a varredura emergencial do banco buscando credenciais anômalas. O requisito expresso no ticket foi: listar qualquer conta de e-mail que possua prefixo exato 'admin', imediatamente seguido por um (e somente um) caractere qualquer desconhecido, terminando com o sufixo '@sptech.school'. A instrução SQL matematicamente perfeita que exprime essa busca é:",
+      options: [
+        "SELECT * FROM Credencial WHERE email LIKE 'admin*@sptech.school';",
+        "SELECT * FROM Credencial WHERE email LIKE 'admin_ %@sptech.school';",
+        "SELECT * FROM Credencial WHERE email LIKE 'admin_@sptech.school';",
+        "SELECT * FROM Credencial WHERE email LIKE 'admin%@sptech.school';",
+      ],
+      correctIndex: 2,
     },
     {
-      id: "aula02_conceitos_20",
-      dificuldade: "Muito Difícil",
-      enunciado:
-        "O slide 'Visão macro do projeto de banco de dados' orquestra de maneira vetorial a transição lógica dos requisitos. Observando a polaridade horizontal que divide 'Dados' e 'Funções' (da esquerda para a direita) e a verticalidade que desce do plano 'Conceitual' ao 'Físico', como a representação fundamental da persistência cruza essas barreiras na dimensão estrita esquerda do referencial orquestrado?",
-      opcoes: {
-        A: "No estrato Conceitual reside a essência da 'Informação', que ascende ontologicamente para a camada sistêmica abstrata de 'Programas' no estrato Lógico, interconectado perfeitamente às lógicas algorítmicas computacionais transacionais.",
-        B: "No estrato Físico reside a essência orgânica do 'Sistema', que descende ontologicamente para a persistência granular do 'SGBD' no estrato Lógico, isolado categoricamente do diagrama original arquitetado pelas restrições do hardware.",
-        C: "No estrato Lógico reside a essência da 'Informação', que descende ontologicamente para o encapsulamento estruturado do 'Sistema' no estrato Físico, convergindo intrinsicamente com as diretrizes de interface de rede computacional.",
-        D: "No estrato Conceitual reside a essência do 'Processo', que descende ontologicamente para a camada tangível dos 'Programas' no estrato Lógico, isolado das diretrizes puras da semântica relacional de informações armazenadas.",
-        E: "No estrato Conceitual reside a essência da 'Informação', que descende ontologicamente para o encapsulamento estruturado do 'SGBD' no estrato Lógico, isolado das diretrizes puras de fluxo sistêmico computacional.",
-      },
-      correta: "E",
+      type: "mcq",
+      difficulty: "fácil",
+      template:
+        "Em uma empresa de logística, os dados operacionais eram armazenados em planilhas isoladas nos computadores dos funcionários. Com o rápido crescimento, a equipe de TI decidiu implantar um Sistema Gerenciador de Banco de Dados (SGBD). Qual é o principal benefício direto que essa mudança arquitetônica traz, conforme os conceitos iniciais de Bancos de Dados?",
+      options: [
+        "O SGBD permite que cada aplicação independente crie e mantenha suas próprias estruturas físicas exclusivas no disco rígido sem qualquer tipo de compartilhamento central.",
+        "O SGBD substitui completamente a necessidade de qualquer rotina de backup, uma vez que os arquivos gerenciados por ele nunca corrompem ou sofrem perdas lógicas.",
+        "O SGBD promove a independência entre as aplicações e os dados, além de possibilitar a eliminação de redundâncias e facilitar a manutenção e o acesso multiusuário.",
+        "O SGBD garante que os dados fiquem estritamente dependentes do código das aplicações cliente para garantir uma maior camada de segurança impenetrável no servidor.",
+      ],
+      correctIndex: 2,
     },
     {
-      id: "aula02_conceitos_16",
-      dificuldade: "Difícil",
-      enunciado:
-        "Antes de qualquer codificação física, a fase de modelagem conceitual atua como alicerce do projeto de banco de dados. Dentre as alternativas, qual delineia de maneira cirúrgica o propósito central integrativo desse estágio preparatório?",
-      opcoes: {
-        A: "Ela viabiliza fundamentalmente o nivelamento cognitivo das necessidades de negócio e promove ativamente o compartilhamento coeso das estruturas.",
-        B: "Ela viabiliza fundamentalmente o nivelamento processual das necessidades de hardware e promove passivamente o mascaramento técnico das estruturas.",
-        C: "Ela viabiliza fundamentalmente a distribuição fragmentada das necessidades de negócio e promove ativamente a restrição lógica coesa das estruturas.",
-        D: "Ela viabiliza fundamentalmente o nivelamento cognitivo das necessidades operacionais e promove ativamente o bloqueio físico das matrizes lógicas.",
-        E: "Ela viabiliza fundamentalmente o isolamento cognitivo das necessidades de negócio e restringe ativamente o compartilhamento coeso das estruturas.",
-      },
-      correta: "A",
+      type: "select",
+      difficulty: "super difícil",
+      template:
+        "A transição de gerações moldou profundamente a modelagem sistêmica. De um lado da cronologia da abstração dos dados desponta o modelo {{0}}, detentor de um legado notório por entrelaçar suas intrincadas relações lógicas no alicerce matemático complexo fundamentado unicamente na teoria universal dos grafos e manipulado por ponteiros em direções difusas sob o auspício primário do comitê CODASYL. No vértice subsequente da história consolidou-se irrevogavelmente a dominância do modelo {{1}}, cuja essência brilhante forjada inteiramente no berço cartesiano e algebra relacional concebida inicialmente pelas mãos do cientista Edgar Codd rege o intercâmbio coeso dos seus nós não mais por meio de caminhos predeterminados em links diretos, mas sob a maestria engenhosa do conceito universal de chaves operacionais exógenas (Foreign Keys).",
+      blanksOptions: [
+        ["Em Rede", "Hierárquico Tradicional", "Relacional"],
+        ["Relacional", "Hierárquico Tradicional", "Orientado a Objetos UML"],
+      ],
+      blanksCorrect: ["Em Rede", "Relacional"],
     },
     {
-      id: "aula02_conceitos_26",
-      dificuldade: "Muito Difícil",
-      enunciado:
-        "A adoção em larga escala de modelos estritamente voltados a paradigmas relacionais aniquilou virtualmente as implementações comerciais de bancos de dados nativamente baseados em Objetos na gestão de fluxo logístico tradicional. Sob a ótica da flexibilidade manipulativa, por que o avanço tecnológico na semântica puramente OO foi sistematicamente repudiado pelas metodologias analíticas empresariais cotidianas?",
-      opcoes: {
-        A: "O confinamento algorítmico natural dos modelos OO prejudicava a intersecção livre de construtos não antevistos (consultas ad-hoc), cenário onde as projeções matemáticas relacionais e a aderência universal à linguagem padronizada SQL brilhavam e forneciam fluidez operacional incomensurável.",
-        B: "O confinamento algorítmico restritivo das chaves estrangeiras relacionais beneficiava a segurança transacional bloqueada e limitada, cenário onde a fragmentação infinita abstrata do modelo OO propunha uma falha sistêmica irreversível nas metodologias empresariais tradicionais dependentes diretas do SGBD.",
-        C: "O confinamento físico irredutível dos modelos OO sobrecarregava as limitações de latência RAM dos hardwares subjacentes e matrizes estáticas, cenário onde as indexações restritivas hierárquicas e a aderência local às redes conectadas SQL despontavam e proporcionavam estabilidade absoluta corporativa.",
-        D: "O confinamento semântico transversal dos modelos relacionais potencializava a intersecção livre de construtos não hierárquicos (consultas ad-hoc), cenário onde as abstrações O.O. universais orientadas pelas conexões CODASYL ofuscavam a lentidão matemática dos arrays relacionais SQL puros.",
-        E: "O confinamento algorítmico natural dos modelos OO facilitava irrestritamente a extração analítica caótica (consultas autônomas abertas), cenário onde o aprisionamento estruturado imposto vigorosamente pelo modelo relacional fornecia segurança burocrática inestimável requisitada fortemente pelas corporações padronizadas.",
-      },
-      correta: "A",
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Um daemon (processo de fundo automatizado) vital programado em C# para realizar profilaxia e higienização lógicas conectou-se em uma instância crítica do MySQL na madrugada sob credenciais abertas, tentando processar uma massiva inativação das flags disparando globalmente: 'UPDATE controle_fatura SET fl_status = 'I';', isento voluntariamente da declaração WHERE. Estando a plataforma configurada rigorosamente sob os parâmetros de segurança empresariais padrão, descreva pontualmente a mecânica reacional desencadeada sob a arquitetura e seu efeito posterior palpável nos registros afetados do SGBD.",
+      options: [
+        "Em função de equívocos léxicos perpetuados pelo daemon desatualizado frente a motores otimizados, o processador interpretador converterá a intenção crua DML numa macro implícita DDL em nível administrativo corporativo; assim, a requisição em vez de afetar quaisquer tabelas prévias, passará unicamente a impingir aos registros futuros em seu evento gerador a inclusão por norma estatutária atrelada aos dados (DEFAULT definition).",
+        "Em função das rotinas operacionais preventivas que inibem colapsos fatais, o motor analítico encarregado fragmentará arbitrariamente a modificação semântica, consumando a reversão e salvando com efetividade unicamente as primeiras e singulares 1.000 (mil) contagens transacionais registradas, expelindo subsequentemente avisos intermitentes de segurança diretamente no pipe output standard do terminal.",
+        "Em função da alta envergadura computacional delegada às consultas estruturadas modernas e da permissividade subentendida, a transação supracitada concluirá em sua totalidade sua alteração global massiva imposta. Tal processo desenfreado, todavia, inflacionará grotescamente o tamanho do arquivo de buffer e acarretará travamentos assíncronos prolongados nos barramentos lógicos durante os logs temporais inerentes da máquina.",
+        "Em função direta das instâncias parametrizadas para ambientes restritos chamados Safe Update Mode, a plataforma embarga e invalida a string malformada logo na varredura preliminar interpretativa e invoca um kill instantâneo na requisição. Nenhuma fração, parcial ou completa, dos dados sofrerá qualquer interferência binária sob o pretexto imperativo da carência lógica baseada no identificador primário explícito.",
+      ],
+      correctIndex: 3,
     },
     {
-      id: "aula02_conceitos_02",
-      dificuldade: "Fácil",
-      enunciado:
-        "Quem é o profissional tecnológico estritamente responsável por autorizar acessos e monitorar o uso do SGBD?",
-      opcoes: {
-        A: "O Programador de App, que foca na autorização de acesso e no constante monitoramento geral do sistema de banco de dados.",
-        B: "O Analista Sistemas, que foca na autorização de acesso e no constante monitoramento geral do sistema de banco de dados.",
-        C: "O Desenvolvedor Tool, que foca na autorização de acesso e no constante monitoramento geral do sistema de banco de dados.",
-        D: "O Projetista de Banco, que foca na autorização de acesso e no constante monitoramento geral do sistema de banco de dados.",
-        E: "O Administrador (DBA), que foca na autorização de acesso e no constante monitoramento geral do sistema de banco de dados.",
-      },
-      correta: "E",
+      type: "select",
+      difficulty: "média",
+      template:
+        "No dimensionamento de um banco de dados, ao armazenar o texto 'Ana' em um campo estruturado como {{0}}, o SGBD alocará fisicamente 10 espaços no disco preenchendo o restante com caracteres em branco. Já em um campo estruturado como {{1}}, o SGBD alocará apenas o espaço dinâmico exigido pelo próprio tamanho da string inserida.",
+      blanksOptions: [
+        ["CHAR(10)", "VARCHAR(10)"],
+        ["CHAR(10)", "VARCHAR(10)"],
+      ],
+      blanksCorrect: ["CHAR(10)", "VARCHAR(10)"],
     },
     {
-      id: "aula02_conceitos_14",
-      dificuldade: "Difícil",
-      enunciado:
-        "O modelo relacional de Edgar Codd causou uma grande disrupção no mercado em 1970. Além de propor as tabelas como relações intrínsecas, o que fundamentou sua supremacia técnica no aumento de desempenho de manutenibilidade do ciclo de software?",
-      opcoes: {
-        A: "A fundamentação rigorosa baseada puramente na arquitetura de grafos verticais, elevando formidavelmente a independência física dos hardwares.",
-        B: "A fundamentação rigorosa baseada puramente na álgebra relacional de conjuntos, elevando formidavelmente a dependência cruzada dos aplicativos.",
-        C: "A fundamentação rigorosa baseada puramente na álgebra relacional de conjuntos, elevando formidavelmente a independência lógicas dos dados.",
-        D: "A fundamentação rigorosa baseada puramente na álgebra estrutural de matrizes, rebaixando formidavelmente a independência lógicas dos dados.",
-        E: "A fundamentação rigorosa baseada puramente na engenharia reversa de objetos, elevando formidavelmente a dependência orgânica dos hardwares.",
-      },
-      correta: "C",
+      type: "mcq",
+      difficulty: "fácil",
+      template:
+        "Uma tabela de clientes de uma loja virtual está sendo construída. Como regra de negócio essencial, o campo 'CPF' nunca pode receber registros vazios no momento em que um usuário faz o cadastro. Qual restrição (constraint) atende diretamente a essa necessidade operacional básica?",
+      options: [
+        "NOT NULL, que assegura que um valor ausente (nulo) não seja aceito ou armazenado na referida coluna durante uma inserção.",
+        "CHECK, que assegura que o sistema avalie previamente a formatação textual do banco antes de validar qualquer preenchimento nulo.",
+        "PRIMARY KEY, que assegura a unicidade e o auto-incremento de todos os valores de uma tabela mesmo que eles não possuam dados.",
+        "UNIQUE, que assegura exclusivamente que os valores sejam criados em formato numérico e sem repetições dentro de toda a estrutura.",
+      ],
+      correctIndex: 0,
     },
     {
-      id: "aula02_conceitos_03",
-      dificuldade: "Fácil",
-      enunciado:
-        "Qual grupo fundamental de instruções SQL é focado de maneira exclusiva em consultar e alterar os registros?",
-      opcoes: {
-        A: "As instruções de Autorização (DAL), que envolvem operações como consultar, inserir, atualizar ou excluir os dados tabulares.",
-        B: "As instruções de Definição (DDL), que envolvem operações como consultar, inserir, atualizar ou excluir os dados tabulares.",
-        C: "As instruções de Manipulação (DML), que envolvem operações como consultar, inserir, atualizar ou excluir os dados tabulares.",
-        D: "As instruções de Controle (DCL), que envolvem operações como consultar, inserir, atualizar ou excluir os dados tabulares.",
-        E: "As instruções de Estruturação (DSL), que envolvem operações como consultar, inserir, atualizar ou excluir os dados tabulares.",
-      },
-      correta: "C",
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Durante o planejamento de performance e sizing (dimensionamento) de um Data Warehouse financeiro com dezenas de milhões de transações, um engenheiro distraído configurou a chave primária da entidade mestra de consolidações com o tipo CHAR(8). Após injetar volumes cavalares portando a cadeia nominal simples '123', as operações de Join (cruzamento referencial) desandaram comparativamente aos testes com Integer. Desconsiderando ruídos alheios de rede, fundamentado nas regras teóricas discutidas, qual a origem latente da deterioração de eficiência?",
+      options: [
+        "Tendo como premissa a padronização autônoma da inteligência artificial contida nos atuais otimizadores das linguagens de consulta estruturadas SQL, a plataforma rejeitaria em tese a alocação e converteria implicitamente a PK para INT em tempo de compilação sem notificação; a sensação ilusória da latência de performance é de fato resultado do overhead persistente dos pacotes no protocolo TCP/IP.",
+        "Tendo como premissa o encapsulamento orgânico condicionado aos caracteres char, o input textual de mero 3 bytes gera um colapso lógico conhecido como fragmentação binária precoce de tupla variável. Essa ruptura desencadeia uma paralisação heurística generalizada onde o SGBD é incapaz de usar indexação em árvore limitando-se ao rastreio Full Scan permanente.",
+        "Tendo como premissa os entraves e gatilhos atrelados às definições espaciais, as matrizes declaradas como tipo caractere para Primary Keys travam nativamente o direito do administrador a invocar o expurgo rápido com a clásula DELETE vazia de instâncias WHERE. Esta supressão acende processos transacionais lentos cronificando os tempos de buscas futuras em toda a engrenagem do schema.",
+        "Tendo como premissa a natureza alocativa estática, o SGBD é compelido a preencher os vazios do input '123' atochando espaços em branco redundantes e fixos nos discos até completar os 8 bytes definidos; esta anomalia somada a um escrutínio caractere por caractere (comparações de strings são intrinsecamente lentas no nível do kernel relacional) sabota as operações de índices matemáticos em contraposição ao modelo INT.",
+      ],
+      correctIndex: 3,
     },
     {
-      id: "aula02_conceitos_18",
-      dificuldade: "Difícil",
-      enunciado:
-        "Embora o Modelo Orientado a Objetos (OO) tenha revolucionado a capacidade expressiva de atributos e comportamentos encapsulados, ele não obliterou o Modelo Relacional na maior parte das aplicações. O que fundamenta tecnicamente a resiliência relacional face ao modelo OO em corporações de gestão tradicional?",
-      opcoes: {
-        A: "A superioridade matemática pragmática e a flexibilidade das heranças profundas do Relacional no cruzamento ad-hoc perante a desestruturação livre do OO.",
-        B: "A superioridade computacional gráfica e a rigidez imutável das estruturas em rede do Relacional no isolamento ad-hoc perante a segmentação intrínseca do OO.",
-        C: "A superioridade matemática pragmática e a flexibilidade das matrizes puras do Relacional no cruzamento ad-hoc perante a segmentação intrínseca do OO.",
-        D: "A superioridade matemática conceitual e a inflexibilidade limitadora das consultas analíticas do Relacional no encapsulamento perante o processamento purista do OO.",
-        E: "A debilidade matemática perceptível e a vulnerabilidade das chaves estrangeiras do Relacional no cruzamento ad-hoc comparado com as classes nativas do OO.",
-      },
-      correta: "C",
+      type: "fill",
+      difficulty: "super difícil",
+      template:
+        "Discutindo paradigmas avançados e extração qualitativa, depreende-se que as premissas arquiteturais sob as diretrizes complexas do {{0}} gravitam pesadamente além da singela ingestão aleatória de quantidades dantescas de blocos de bytes não-estruturados, focando estritamente nas ferramentas sistêmicas dedicadas a domar, processar e estruturar esses fluxos multiformes e caóticos gerando vertentes passíveis de uso empírico final. Na banda paralela corporativa visualizada, as correntes padronizadas inerentes ao {{1}} pressupõem invariavelmente uma alimentação estrutural coesa por meio de canalizações integradas, municiando analistas na confecção sintética de dashboards cruciais aplicáveis diretamente em decisões estratégicas pautadas pelo viés focado em modelos de negócios delimitados.",
+      blanksCorrect: [
+        "Big Data (Grande Massa de Dados)",
+        "Business Intelligence (BI - Inteligência de Negócio)",
+      ],
+      options: [
+        "Big Data (Grande Massa de Dados)",
+        "Business Intelligence (BI - Inteligência de Negócio)",
+        "Sistemas Tradicionais Legados Arquivados",
+        "Algoritmos Criptográficos Embarcados",
+      ],
     },
     {
-      id: "aula02_conceitos_27",
-      dificuldade: "Muito Difícil",
-      enunciado:
-        "A implementação de microprocessadores biomédicos restritivos e hermeticamente selados para o monitoramento invasivo e momentâneo de picos de fibrilação cardíaca descarta, via de regra, a adoção de subsistemas complexos gerenciadores de dados transacionais integrados (SGBD completos). Analisando friamente a documentação técnica de viabilidade de projetos críticos de alta concisão apresentados, qual a barreira arquitetural mortífera associada ao seu emprego neste host?",
-      opcoes: {
-        A: "A inflexibilidade iminente dos sistemas gerenciadores robustos em fornecer latência quase inexistente combinada de forma predatória ao exíguo e escasso escopo de recursos de memória permanente nativa que compõem intrinsecamente os circuitos restritos desse aparato embarcado descartável.",
-        B: "A inflexibilidade iminente dos registros em matrizes de chaves estrangeiras em fornecer escalabilidade irrestrita, combinada inevitavelmente à absurda expansão de dados que fragmentaria de forma fatal a volumosa capacidade permanente inerente aos circuitos amplos dessa complexa central hospitalar isolada e ininterrupta.",
-        C: "A incompatibilidade gritante e irresolúvel dos SGBDs baseados em arquiteturas relacionais de rede que não permitem a retenção de logísticas matemáticas estritamente complexas ou processamentos analíticos profundos de inteligência clínica exigidos intrinsecamente por hardwares hospitalares remotos de alta performance.",
-        D: "A latência insuperável oriunda da falta de estruturas lógicas pré-processadas baseadas exclusivamente na flexível linguagem abstrata de orientação a objetos corporativa que impossibilita categoricamente a gravação síncrona persistente e serializada exigida rigorosamente por todos os aparelhos autônomos cirúrgicos e ambulatoriais do sistema.",
-        E: "A vulnerabilidade intrínseca imposta pela conexão necessária aos servidores externos, que compromete ativamente a rigidez transacional militar de tempo real exigida e combinada estruturalmente com as múltiplas sessões assíncronas geradas e armazenadas dentro das partições voláteis limitadas desse hardware biológico.",
-      },
-      correta: "A",
+      type: "fill",
+      difficulty: "média",
+      template:
+        "Para um relatório gerencial, se precisarmos encontrar clientes cujo nome termine obrigatoriamente com a letra 'a' independente do que vier antes, utilizamos a cláusula de busca LIKE {{0}}. Por outro lado, para filtrar usuários onde a letra 'a' seja impreterivelmente a segunda letra do nome, utilizamos LIKE {{1}}.",
+      blanksCorrect: ["'%a'", "'_a%'"],
+      options: ["'%a'", "'_a%'", "'a%'", "'%a%'"],
     },
     {
-      id: "aula02_conceitos_05",
-      dificuldade: "Média",
-      enunciado:
-        "Em qual dos ambientes corporativos ou industriais descritos abaixo a implementação de um SGBD NÃO seria tecnicamente recomendada?",
-      opcoes: {
-        A: "Em sistemas embarcados de hardware com capacidades de processamento restritas e requisitos rigorosos de ação de tempo real.",
-        B: "Em sistemas corporativos de varejo com capacidades de processamento restritas e requisitos rigorosos de ação de tempo real.",
-        C: "Em sistemas de processamento de RH com capacidades de processamento restritas e requisitos rigorosos de ação de tempo real.",
-        D: "Em sistemas embarcados de hardware com capacidades de processamento robustas e requisitos flexíveis de ação de longo prazo.",
-        E: "Em sistemas analíticos estruturados com capacidades de processamento robustas e requisitos flexíveis de ação de longo prazo.",
-      },
-      correta: "A",
+      type: "select",
+      difficulty: "super difícil",
+      template:
+        "O engenheiro concebeu a tabela 'Maquina' contendo a tupla simplificada 'id INT PRIMARY KEY' e 'status VARCHAR(10)'. Posteriormente, visando rigor qualitativo, submeteu um DDL com a seguinte instrução: `ALTER TABLE Maquina ADD CONSTRAINT chkSts CHECK (status IN ('A', 'B'));`. Deste momento em diante, inserindo-se novos registros preenchidos unicamente com os caracteres brutos ('A', 'a', 'C'), a eficácia insercional se provará operante de maneira restrita apenas à opção {{0}}. Para os caracteres alternativos, o SGBD, assumindo sua típica case sensitivity, deflagrará sumariamente o respectivo erro fatal classificado como {{1}}.",
+      blanksOptions: [
+        ["'A'", "'A' e 'a'", "Nenhuma das opções"],
+        [
+          "Violação de Constraint (Check violated)",
+          "Violação de Chave Estrangeira Limitrofe",
+          "Corrupção Crítica de Integridade Nula",
+        ],
+      ],
+      blanksCorrect: ["'A'", "Violação de Constraint (Check violated)"],
     },
     {
-      id: "aula02_conceitos_23",
-      dificuldade: "Muito Difícil",
-      enunciado:
-        "Um Analista Júnior foi promovido, passando a exigir os direitos executivos de manipular os dados da infraestrutura financeira sem, no entanto, deter poderes para reescrever, expurgar ou mutilar a arquitetura tabular que alicerça o sistema. Em uma manobra minuciosa de Data Control Language (DCL), como o DBA articula perfeitamente essa limitação de escopo funcional contra potenciais acidentes catastróficos?",
-      opcoes: {
-        A: "Empregando a cláusula ALTER, injeta autorizações irrestritas nas searas transacionais de inserção e atualização sistêmica regidas pelo espectro da DML, e deliberadamente garante a revogação de acessos na visualização de esquemas de colunas e chaves estrangeiras vinculadas aos domínios da DDL.",
-        B: "Empregando a cláusula GRANT, injeta autorizações restritivas nas searas transacionais de consultas genéricas e simples regidas pelo espectro da DCL, e deliberadamente exime-se de invocar restrições sobre exclusões definitivas de colunas e dados massivos inerentes às subcategorias de DDL.",
-        C: "Empregando a cláusula GRANT, injeta autorizações irrestritas nas searas transacionais de inserção e atualização massiva regidas pelo espectro da DML, e deliberadamente exime-se de conceder jurisdição sobre criações ou supressões de colunas e tabelas inerentes à DDL.",
-        D: "Empregando a cláusula GRANT, injeta autorizações irrestritas nas searas transacionais de inserção e redefinição de esquemas regidas pelo espectro da DDL, e deliberadamente exime-se de conceder jurisdição sobre pesquisas e formatações de colunas e tabelas inerentes à DML.",
-        E: "Empregando a cláusula REVOKE, injeta autorizações irrestritas nas searas estruturais de construção e reconstrução massiva regidas pelo espectro da DML, e deliberadamente exime-se de revogar jurisdições sobre criações operacionais e lógicas de registros atreladas rigidamente à DDL.",
-      },
-      correta: "C",
+      type: "fill",
+      difficulty: "fácil",
+      template:
+        "Durante a alocação de responsabilidades no projeto, o {{0}} tem como principal papel autorizar acessos e monitorar o uso da infraestrutura, enquanto o {{1}} foca em identificar quais dados serão armazenados e escolher as estruturas apropriadas.",
+      blanksCorrect: ["Administrador de BD (DBA)", "Projetista de BD"],
+      options: [
+        "Administrador de BD (DBA)",
+        "Projetista de BD",
+        "Usuário Final",
+        "Programador de Aplicações",
+      ],
     },
     {
-      id: "aula02_conceitos_08",
-      dificuldade: "Média",
-      enunciado:
-        "Quando um usuário final ignora o preenchimento de seu complemento residencial em um aplicativo de cadastro, o que o SGBD registrará?",
-      opcoes: {
-        A: "O SGBD processará o campo como valor Zero, indicando formalmente que a referida informação encontra-se inteiramente ausente ou vazia.",
-        B: "O SGBD processará o campo como valor Branco, indicando formalmente que a referida informação encontra-se inteiramente ausente ou vazia.",
-        C: "O SGBD processará o campo como valor Falso, indicando formalmente que a referida informação encontra-se inteiramente ausente ou vazia.",
-        D: "O SGBD processará o campo como valor Chave, indicando formalmente que a referida informação encontra-se inteiramente ausente ou vazia.",
-        E: "O SGBD processará o campo como valor NULL, indicando formalmente que a referida informação encontra-se inteiramente ausente ou vazia.",
-      },
-      correta: "E",
+      type: "mcq",
+      difficulty: "difícil",
+      template:
+        "Ao realizar o fechamento do ano, um desenvolvedor tentou padronizar todos os campos executando 'UPDATE Funcionario SET salario = salario * 1.1;' na interface de um MySQL recém-instalado, resultando em bloqueio da operação pelo SGBD. Com base no funcionamento particular desse software, qual é a justificativa técnica para o travamento da instrução?",
+      options: [
+        "O MySQL requer mandatoriamente que operações DML de alto impacto na base de dados inteira sejam antecedidas por comandos administrativos de destravamento, como UNLOCK TABLES.",
+        "O MySQL possui uma proteção de segurança habilitada por padrão que bloqueia execuções dos comandos UPDATE e DELETE quando estes não estão acompanhados por uma cláusula WHERE baseada na chave primária.",
+        "O MySQL avalia o comando sem condições WHERE e, de maneira inteligente, o converte silenciosamente para um TRUNCATE TABLE para evitar o consumo abusivo da memória transacional do sistema.",
+        "O MySQL não suporta processamento de operações matemáticas (multiplicação ou divisão) diretamente acopladas na cláusula SET do comando UPDATE sem o uso prévio de variáveis de sessão.",
+      ],
+      correctIndex: 1,
     },
     {
-      id: "aula02_conceitos_09",
-      dificuldade: "Difícil",
-      enunciado:
-        "Uma organização governamental ainda utiliza um mainframe padronizado pela CODASYL. A equipe de novos engenheiros notou que esse sistema permite cruzamentos de dados bidirecionais complexos. Qual característica desse modelo viabiliza essa flexibilidade anômala?",
-      opcoes: {
-        A: "A imposição das barreiras estritamente orientadas a objetos, permitindo que os registros formem grafos multiconectados de associações.",
-        B: "A remoção das barreiras estritamente verticais da hierarquia, permitindo que os registros formem grafos multiconectados de associações.",
-        C: "A remoção das barreiras estritamente relacionais das tabelas, permitindo que os registros formem grafos multiconectados de associações.",
-        D: "A imposição das barreiras estritamente verticais da hierarquia, permitindo que os registros formem árvores multiconectadas de associações.",
-        E: "A remoção das barreiras estritamente orientadas a objetos, permitindo que os registros formem grafos multiconectados de associações.",
-      },
-      correta: "B",
+      type: "mcq",
+      difficulty: "média",
+      template:
+        "Um desenvolvedor backend precisa escrever um script para, primeiramente, criar uma nova tabela estruturada para os logs de acesso e, na sequência, inserir a primeira linha de registro nesse arquivo. Quais categorias sequenciais de comandos da linguagem SQL ele utilizará nesse caso específico?",
+      options: [
+        "Data Definition Language (DDL) para o comando CREATE e Data Manipulation Language (DML) para o comando INSERT.",
+        "Data Definition Language (DDL) para o comando ALTER e Data Manipulation Language (DML) para o comando SELECT.",
+        "Data Manipulation Language (DML) para o comando CREATE e Data Definition Language (DDL) para o comando INSERT.",
+        "Data Control Language (DCL) para o comando CREATE e Data Definition Language (DDL) para o comando UPDATE.",
+      ],
+      correctIndex: 0,
     },
     {
-      id: "aula02_conceitos_24",
-      dificuldade: "Muito Difícil",
-      enunciado:
-        "Sob o rigor absoluto da álgebra imposta pelas matrizes relacionais e em completa ausência de diretrizes paliativas ou triggers customizadas estabelecidas previamente pela arquitetura, qual é o destino ontológico inquestionável de uma tupla que venha a ser registrada omitindo dados textuais na coluna não classificada como chave de identificação essencial?",
-      opcoes: {
-        A: "O motor gerencial do modelo absorverá intrinsecamente essa incompletude transmutando-a no metadado isolado NULL, consagrando que naquela interseção não se dispõe de conhecimento prático factível, tangível ou mapeado no universo representativo.",
-        B: "O motor gerencial do modelo absorverá intrinsecamente essa incompletude transmutando-a em uma formatação vazia, consagrando que naquela interseção o espaço geográfico alocado pelo disco foi preservado de fragmentações e corrupções sistêmicas inerentes ao registro.",
-        C: "O motor gerencial do modelo bloqueará imediatamente essa inserção rejeitando-a com restrições severas, consagrando que em toda extensão do tecido lógico do banco a ausência transacional violenta de forma irrevogável as premissas matemáticas fundacionais estipuladas por E. Codd.",
-        D: "O motor gerencial do modelo absorverá intrinsecamente essa incompletude referenciando-a a uma chave estrangeira invisível, consagrando que naquela interseção estrutural não se dispõe de garantias operacionais que comprovem a integridade transitiva baseada estritamente no universo físico.",
-        E: "O motor gerencial do modelo absorverá temporariamente essa incompletude transmutando-a no metadado numérico nulo absoluto (zero matemático), consagrando que naquela interseção ocorreu um erro imperativo recuperável a longo prazo pelos utilitários e algoritmos de varredura.",
-      },
-      correta: "A",
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "Um gerente de infraestrutura percebeu um consumo excessivo em sua instância na nuvem e executou consecutivamente no console de produção os seguintes comandos: 'DELETE FROM transacoes;'; em seguida 'TRUNCATE TABLE transacoes;'; culminando por fim com um 'DROP TABLE transacoes;'. O que o terminal retornará se um operador júnior tentar na sequência imediata emitir o comando 'DESCRIBE transacoes;'?",
+      options: [
+        "O terminal acusará um erro crasso e obstrutivo atestando que a tabela de fato não existe no repositório, visto que o DROP final extirpou irreversivelmente toda a composição estrutural, incluindo os metadados associados ao seu nome.",
+        "O terminal compilará as propriedades do campo indicando-os como vazios em virtude da flag oculta implantada na deleção lógica, salvaguardando a casca estrutural para inserções eventuais da aplicação cliente sem causar nenhum panic no sistema.",
+        "O terminal despejará serenamente no output a estrutura limpa da tabela original, isso porque o comportamento subjacente do TRUNCATE age regenerando o contêiner virtual de maneira automática instantaneamente logo após a deleção feita pelo DROP.",
+        "O terminal negará o acesso apontando violação explícita de privilégios e credenciais, já que interações sequenciais do subgrupo DDL blindam o dicionário de dados contra novas visualizações estruturais provindas do subgrupo de comandos DQL.",
+      ],
+      correctIndex: 0,
     },
     {
-      id: "aula02_conceitos_01",
-      dificuldade: "Fácil",
-      enunciado:
-        "No contexto de modelagem relacional apresentada, como garantimos logicamente a unicidade estrutural de um registro?",
-      opcoes: {
-        A: "Utilizando a Foreign Key, que identifica de forma única a tupla (registro) dentro da tabela relacional selecionada.",
-        B: "Utilizando a Primary Key, que identifica de forma única a tupla (registro) dentro da tabela relacional selecionada.",
-        C: "Utilizando um SGBD local, que identifica de forma única a tupla (registro) dentro da tabela relacional selecionada.",
-        D: "Utilizando um valor NULL, que identifica de forma única a tupla (registro) dentro da tabela relacional selecionada.",
-        E: "Utilizando o modelo UML, que identifica de forma única a tupla (registro) dentro da tabela relacional selecionada.",
-      },
-      correta: "B",
+      type: "mcq",
+      difficulty: "super difícil",
+      template:
+        "A transposição inadequada de constructos teóricos puros para estruturas binárias tangíveis num e-commerce global incitou o analista-chefe de infraestrutura a violar as leis matemáticas de normalização clássica, propagando conscientemente desnormalizações intempestivas do atributo 'CodID_Companhia' em extensas malhas de tabelas adjacentes para agilizar cruzamentos nas planilhas (queries). Subjulgando o pragmatismo temporário imposto na concepção desse modelo físico espelhado de um modelo lógico falho, qual seria a ruína orgânica primordial esperada à medida que as constantes dinâmicas e transacionais alterassem as propriedades matriz ao decorrer do ciclo vital da aplicação?",
+      options: [
+        "A pulverização generalizada dos referidos identificadores nas vertentes secundárias corroerá inexoravelmente a habilidade nativa da máquina SGBD transacional em acatar instruções DML simples interativas; com a progressão irremediável dos anos operacionais de tempo integral a equipe terá de invocar intervenções manuais via blocos de comandos estritamente orientados aos dialetos DDL hierárquicos precursores.",
+        "A profusão generalizada dos atributos colaterais criará exponencialmente anomalias de atualização catastróficas encadeadas e ferirá de morte a consistência global; um único distúrbio matriz exigirá rastreios intermináveis para manutenção sincrônica, escancarando a falta severa na implementação rigorosa da disciplina base estipulada pela Normalização prévia teórica relacional.",
+        "A complicação gerada consistirá isoladamente num agravamento agudo e persistente do custo nominal empenhado para manutenção magnética dos discos estáticos em infraestrutura alugada; abstrações de redundância jamais incorrerão num abalo contíguo da coesão se as definições semânticas constarem em repositórios independentes amarradas fortemente pela abstração intrínseca nos paradigmas dos Bancos NoSQL.",
+        "A repetição exata dos vínculos, embora não muito elegante ao olhar empírico purista, não detém na sua concepção mecânica ou lógica ameaças à consistência referida, uma vez consolidado o dicionário central de dados; tal artifício de redundância extrema compõe indubitavelmente a pedra angular basilar pela qual a escalabilidade corporativa provê suporte analítico constante para as massas ativas em tempo simultâneo online (Alta Disponibilidade).",
+      ],
+      correctIndex: 1,
     },
     {
-      id: "aula02_conceitos_04",
-      dificuldade: "Média",
-      enunciado:
-        "Uma empresa precisa modelar um Sistema de Informação Geográfica (GIS) avançado. Qual modelo histórico é o mais ideal?",
-      opcoes: {
-        A: "O Modelo de Sistema Arquivo, que surgiu comercialmente nos anos 80, ideal para suportar atributos e manipular tipos complexos.",
-        B: "O Modelo Relacional de Dados, que surgiu comercialmente nos anos 80, ideal para suportar atributos e manipular tipos complexos.",
-        C: "O Modelo Hierárquico de Nó, que surgiu comercialmente nos anos 80, ideal para suportar atributos e manipular tipos complexos.",
-        D: "O Modelo em Rede (CODASYL), que surgiu comercialmente nos anos 80, ideal para suportar atributos e manipular tipos complexos.",
-        E: "O Modelo Orientado a Objetos, que surgiu comercialmente nos anos 80, ideal para suportar atributos e manipular tipos complexos.",
-      },
-      correta: "E",
+      type: "mcq",
+      difficulty: "média",
+      template:
+        "Uma instituição mapeia suas filiais de modo que cada filial é representada como um nó 'pai' isolado, e os funcionários são nós 'filhos'. A regra é que um filho jamais pode possuir mais de um pai, formando uma estrutura de cima para baixo rígida. Qual modelo de dados descreve precisamente essa topologia clássica abordada em sala?",
+      options: [
+        "Modelo Orientado a Objetos, motivado pelas restrições modernas em lidar isoladamente com heranças polimórficas complexas UML.",
+        "Modelo Relacional, elaborado na década de 1970 por Edgar Codd com base em matrizes matemáticas bidimensionais de tuplas.",
+        "Modelo Hierárquico, amplamente utilizado no passado através do sistema IMS da IBM estruturado em formato de árvore.",
+        "Modelo em Rede, padronizado historicamente pela conferência CODASYL e estruturado primariamente através de grafos flexíveis.",
+      ],
+      correctIndex: 2,
     },
     {
-      id: "aula02_conceitos_21",
-      dificuldade: "Muito Difícil",
-      enunciado:
-        "O Sistema Comercial IMS (Information Management System) inaugurou comercialmente o pragmatismo das implementações hierárquicas. Tomando a topologia top-down de árvores como axioma inflexível, suponha a existência de um nó superior T (Turma) e um nó inferior A (Aluno). Qual axioma de vinculação relacional é fisicamente irrevogável segundo as fundações estritas desse arranjo?",
-      opcoes: {
-        A: "Um vetor de ocorrência do nó T possui jurisdição relacional obrigatória para mapear um-para-um os vetores descendentes do nó A, eliminando a viabilidade física de matrizes espalhadas em múltiplos braços organizacionais no mesmo núcleo sistêmico superior.",
-        B: "Um vetor de ocorrência do nó T possui jurisdição ilimitada para abraçar múltiplos vetores descendentes do nó A, permitindo, por regra nativa de redes invertidas, que o nó A vincule-se ativamente a constelações variadas e distantes de vetores superiores do nó T.",
-        C: "Um vetor de ocorrência do nó T possui restrição ilimitada para rejeitar múltiplos vetores descendentes do nó A, garantindo que o núcleo referencial de cada nó A encontre-se perpetuamente livre para associar-se a infinitos parentais superiores do nó T.",
-        D: "Um vetor de ocorrência do nó A possui jurisdição ilimitada para abraçar múltiplos vetores ascendentes do nó T, todavia, o núcleo referencial de cada nó T encontra-se perpetuamente atrelado à exclusividade de um único vetor parental inferior do nó A.",
-        E: "Um vetor de ocorrência do nó T possui jurisdição ilimitada para abraçar múltiplos vetores descendentes do nó A, todavia, o núcleo referencial de cada nó A encontra-se perpetuamente atrelado à exclusividade de um único vetor parental superior do nó T.",
-      },
-      correta: "E",
+      type: "select",
+      difficulty: "difícil",
+      template:
+        "No ecossistema que compõe o cenário de Banco de Dados, quem especifica tecnicamente os sistemas e documenta as carências transacionais dos usuários finais são primariamente os {{0}}. Em contrapartida, os responsáveis por aplicar fisicamente implementações profundas dos módulos internos e desenhar as próprias interfaces de uso abstrato do SGBD consistem nos {{1}}.",
+      blanksOptions: [
+        ["Analistas de Sistemas", "Projetistas de BD", "DBA"],
+        [
+          "Projetistas de Sistemas SGBD",
+          "Desenvolvedores de Ferramentas",
+          "Administradores (DBA)",
+        ],
+      ],
+      blanksCorrect: ["Analistas de Sistemas", "Projetistas de Sistemas SGBD"],
     },
   ],
 };

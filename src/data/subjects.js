@@ -43,6 +43,7 @@
 import { TI } from "./questions/TI.js";
 import { ARQCOMP } from "./questions/ARQCOMP.js";
 import { SO } from "./questions/SO.js";
+import { BD } from "./questions/BD.js";
 
 export const SUBJECTS = [
   TI,
