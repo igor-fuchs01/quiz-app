@@ -45,11 +45,13 @@ import { ARQCOMP } from "./questions/ARQCOMP.js";
 import { SO } from "./questions/SO.js";
 import { BD } from "./questions/BD.js";
 import { BD_PRATICO } from "./questions/BD_PRATICO.js";
+import { ALGORIT } from "./questions/ALGORIT.js";
 
 export const SUBJECTS = [
   TI,
   ARQCOMP,
   SO,
   BD,
-  BD_PRATICO
+  BD_PRATICO,
+  ALGORIT
 ];
