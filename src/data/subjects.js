@@ -46,6 +46,7 @@ import { SO } from "./questions/SO.js";
 import { BD } from "./questions/BD.js";
 import { BD_PRATICO } from "./questions/BD_PRATICO.js";
 import { ALGORIT } from "./questions/ALGORIT.js";
+import { PI } from "./questions/PI.js";
 
 export const SUBJECTS = [
   TI,
@@ -53,5 +54,6 @@ export const SUBJECTS = [
   SO,
   BD,
   BD_PRATICO,
-  ALGORIT
+  ALGORIT,
+  PI
 ];
