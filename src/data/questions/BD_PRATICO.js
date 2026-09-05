@@ -14,7 +14,7 @@ export const BD_PRATICO = {
       options: [
         "MODIFY",
         "ALTER",
-        "CHANGE",
+        "MODIFY",
         "not null",
         "unique",
         "primary key",
